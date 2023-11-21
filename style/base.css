@@ -1,0 +1,264 @@
+
+body {
+    position: relative;
+    font-family: Helvetica;
+    text-align: center;
+    background-color: rgb(253, 247, 243);
+   }
+   
+   
+   
+   
+   @keyframes headerAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+   }
+   
+   
+   .header-animation {
+    animation: headerAnimation 3.6s forwards;
+    font-family: "Agbalumo";
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(255, 119, 0);
+    text-align: left;
+    text-shadow:
+          -2px -2px 0 rgb(255, 255, 255),
+           2px -2px 0 rgb(255, 255, 255),
+          -2px  2px 0 rgb(255, 255, 255),
+           2px  2px 0 rgb(255, 255, 255);
+   }
+   
+   
+   .header {
+    font-family: Tahoma;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    line-height: 45px;
+    margin-bottom: 0;
+    text-align: center;
+   }
+   
+   
+   /* Styling for the navigation section */
+   .navigation {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;}
+   
+   
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+   padding: 0;
+ }
+  nav ul li {
+   display: inline-block;
+   position: relative;
+ }
+  nav ul li:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   height: 50%;
+   border-right: 1px solid rgb(0, 0, 0);
+ }
+  nav ul li a {
+   display: block;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   padding: 10px 15px;
+ }
+  nav ul li a:hover {
+   background-color: rgb(239, 187, 154);
+ }
+
+
+/* Styling for the bio section */
+
+
+.introduction {
+ font-family: Helvetica;
+ font-size: 28px;
+ color: rgb(218,95,17);
+ font-weight: bold;
+ line-height: 45px;
+ text-align: center;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+
+.bio{
+ font-family: Helvetica;
+ font-size: 20px;
+ color: rgb(0, 0, 0);
+ font-weight: lighter;
+ line-height: 26px;
+ margin-top: 45px;
+ margin-bottom: 45px;
+ text-align: center;
+}
+
+
+@keyframes pan {
+ 0% {
+   transform: translateX(-100%);
+ }
+ 100% {
+   transform: translateX(0);
+ }
+}
+
+
+.pan-animation {
+ animation: pan 1.5s forwards;
+}
+
+
+
+
+.work{
+ font-family: Helvetica;
+ font-size: 22px;
+ color: rgb(0, 0, 0);
+ font-weight: lighter;
+ line-height: 42px;
+ margin-bottom: 50px;
+ background-color: rgb(239, 187, 154);
+ text-align: center;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
+.aside {
+ font-family: Helvetica;
+ font-size: 20px;
+ color: rgb(0, 0, 0);
+ font-weight: lighter;
+ text-align: center;
+ line-height: 26px;
+ margin-top: 15px;
+ margin-bottom: 30px;
+}
+
+
+/* Styling for the image section */
+
+
+.AAA{
+ width: 550px;
+ max-width: 100%;
+ height: auto;
+ border-radius: 10%;
+}
+
+
+
+
+.BBB{
+ width: 550px;
+ max-width: 100%;
+ height: auto;
+ border-radius: 10%;
+}
+
+
+.CCC{
+ width: 550px;
+ max-width: 100%;
+ height: auto;
+ border-radius: 10%;}
+
+
+/* Styling for the table section */
+
+
+.table {
+ font-family: Helvetica;
+ font-size: 20px;
+ color: rgb(0, 0, 0);
+ background-color: rgb(255, 111, 58);
+ width: 420px;
+ max-width: 100%;
+ text-align: center;
+ font-weight: bold;
+ line-height: 28px;
+ padding: 0.5px;
+ margin-top: 20px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+.th1{
+ background-color: white;
+ text-align: center;
+}
+
+
+
+
+/* Styling for the bottom section */
+.back {
+ font-family: Helvetica;
+ bottom: 20px;
+ right: 20px;
+ color: blue;
+ text-align: center;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
+.back:hover{
+ font-family: Helvetica;
+ color: blue;
+}
+
+
+.end{
+ font-family: Helvetica;
+ font-size: 20px;
+ color: rgb(0, 0, 0);
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+
+#Contact {
+ font-family: Helvetica;
+ font-size: 18px;
+ line-height: 5px;
+ text-align: center;
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+
+footer {
+ font-family: Helvetica;
+ background-color: rgb(241, 241, 241);
+ padding: 30px;
+ text-align: center;
+ font-size: 14px;
+}
+
+
+::selection{
+ color: rgb(255, 149, 110);
+ background-color: rgb(252, 245, 238);
+}
