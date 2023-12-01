@@ -257,8 +257,85 @@ footer {
  font-size: 14px;
 }
 
+/*Javascript button*/
+#btn-alert {
+  font-family: "Agbalumo";
+  font-size: 22px;
+  background-color: rgb(255, 111, 58);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+/* Hover Button */
+#btn-hover {
+  position: flex;
+  background-image: url('../images/girl_.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:rgb(252, 245, 238);
+  color: transparent;
+  padding: 25px 25px;
+  border: none;
+}
+#btn-hover.text {
+  background-image: none;
+  font-family: Helvetica;
+ font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+#btn-counter {
+  border: 2px solid rgb(255, 111, 58);
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(255, 111, 58);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.even {
+  color: rgb(209, 71, 20);
+}
+
+.odd {
+  color: rgb(0, 0, 0);
+}
+
+#btn-counter:hover {
+  background-color: orange;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#txt-counter {
+  font-size: 24px;
+  font-weight: bold;
+}
+.odd {
+  color: rgb(255, 111, 58);
+}
+.even {
+  color: rgb(255, 149, 110);
+}
 
 ::selection{
  color: rgb(255, 149, 110);
  background-color: rgb(252, 245, 238);
 }
+
+

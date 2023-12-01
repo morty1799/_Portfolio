@@ -6,7 +6,7 @@
  <meta  charset="utf-8">
  <meta name="viewpoint" content="width=device-width, initial-scale=1">
  <link href="./style/base.css" rel="stylesheet">
- <script src="./js/main.js"></script>
+ <script defer src="./js/main.js"></script>
  <title>Welcome to Carmen's playground</title>
 </head>
 
@@ -15,9 +15,10 @@
 
 <body>
     <header class="header-animation">
-     Carmen Lau
+      <button id="btn-alert" style="display: none;">&#10024;Carmen Lau&#10024;</button>
    </header>
 
+   <button id="btn-hover"></button>
 
  <nav class="navigation">
    <ul>
@@ -27,12 +28,10 @@
    </ul>
 </nav>
 
-
 <main>
 <section id="Hello" class="introduction">
  <h5>Hello, I am Carmen, a coding newbie who loves creating graphic art as a hobby.</h5>
 </section>
-
 
 <section class="bio">
 <h2 class="pan-animation"><i> Let's connect <br></i></h2>
@@ -158,7 +157,7 @@ evoking a sense of nostalgia and enhancement,meanwhile, aligning with their play
 <section id="Contact">
  <h3>Contact Me</h3> <br>
 You can reach me through the following channel:
-<a href="mailto:lllau.carmen@gmail.com ">Email Me</a>
+<a href="https://www.instagram.com/gojohnny.go?igshid=NGVhN2U2NjQ0Yg%3D%3D">Direct message Me</a>
 </section>
 </main>
 <nav>
@@ -168,12 +167,19 @@ You can reach me through the following channel:
 </nav>
 
 
+<button id="btn-counter">Stress Relief</button> 
+  <p id="txt-counter">Life is good: 1</p>
+  <ol id="numbers"></ol>
+
 <footer>
- <p>&copy; Carmen Lau 2023. All rights reserved.</p>
+ <p>&copy; <span id="currentYear"></span> Carmen Lau . 
+ </p>
 </footer>
 
 
+
+
 </body>
-<script> scr="./path/to/main.js" </script>
+<script async scr="./path/to/main.js"> </script>
 
 </html>
